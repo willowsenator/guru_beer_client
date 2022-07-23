@@ -11,11 +11,11 @@
     <groupId>guru.springframework</groupId>
     <artifactId>mssc-brewery-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mssc-brewery-client</name>
+    <name>guru-beer-client</name>
     <description>SFG Brewery Client</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>18</java.version>
     </properties>
 
     <dependencies>
@@ -87,7 +87,7 @@
                                     <version>[3.6.0,)</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
-                                    <version>[11,)</version>
+                                    <version>[18,)</version>
                                 </requireJavaVersion>
                                 <requireReleaseDeps>
                                     <onlyWhenRelease>true</onlyWhenRelease>
