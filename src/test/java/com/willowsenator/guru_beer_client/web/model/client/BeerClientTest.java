@@ -34,4 +34,10 @@ class BeerClientTest {
         var dto = BeerDto.builder().beerName("New Beer").build();
         client.updateBeer(UUID.randomUUID(), dto);
     }
+
+    @Test
+    void deleteBeer() {
+        client.deleteBeer(UUID.randomUUID());
+    }
+
 }
