@@ -1,5 +1,6 @@
 package com.willowsenator.guru_beer_client.web.model.client;
 
+import com.willowsenator.guru_beer_client.web.model.BeerDto;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,8 +16,16 @@ class BeerClientTest {
     BeerClient client;
 
     @Test
-    void getBeerDto() {
+    void getBeerById() {
         var dto = client.getBeerById(UUID.randomUUID());
         assertNotNull(dto);
+    }
+
+    @Test
+    void saveNewBeer(){
+        var dto = BeerDto.builder().beerName("New Beer").build();
+        var uri = client.saveNewBeer(dto);
+        assertNotNull(uri);
+        System.out.println(uri);
     }
 }
